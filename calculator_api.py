@@ -9,7 +9,7 @@ def home():
 @app.route('/add', methods=['POST'])
 def add():
     data = request.json
-    result = data['a'] + data['b']
+    result = data['a'] - data['b']
     return jsonify({"result": result})
 
 @app.route('/subtract', methods=['POST'])
